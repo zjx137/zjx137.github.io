@@ -79,19 +79,17 @@
 
 
 
-<meta name="description" content="JavaScritpt 对象小结构造函数，原型对象，实例对象三者之间的关系每创建一个函数都含有一个prototype的属性，该属性是一个指针，指向原型对象。 原型对象上含有一个constructor属性，该属性也是一个指针，指向相关联的构造函数。 通过构造函数产生的实例对象含有一个proto属性，指向原型对象，使其能过访问原型对象上的属性和方法。  总结：每个函数都有一个原型对象，原型对象">
+<meta name="description" content="Ajax 初步Ajax = 异步JS和XML，是一种用于创建快速动态网页的技术。 XMLHttpRequest 对象用于在后台和服务器交换数据，可使网页的某部分更新的同时，不重新加载整个页面。 1var request = new XMLHttpRequest(); XMLHttpRequest 对象有许多种方法，其中Send()、Open()方法用于向服务器发送请求。    方法 描述">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript 对象">
-<meta property="og:url" content="http://yoursite.com/2018/11/05/JavaScript-对象小记/index.html">
+<meta property="og:title" content="Ajax_primer">
+<meta property="og:url" content="http://yoursite.com/2018/11/11/Ajax-primer/index.html">
 <meta property="og:site_name" content="Bacbin&#39;s blogs">
-<meta property="og:description" content="JavaScritpt 对象小结构造函数，原型对象，实例对象三者之间的关系每创建一个函数都含有一个prototype的属性，该属性是一个指针，指向原型对象。 原型对象上含有一个constructor属性，该属性也是一个指针，指向相关联的构造函数。 通过构造函数产生的实例对象含有一个proto属性，指向原型对象，使其能过访问原型对象上的属性和方法。  总结：每个函数都有一个原型对象，原型对象">
+<meta property="og:description" content="Ajax 初步Ajax = 异步JS和XML，是一种用于创建快速动态网页的技术。 XMLHttpRequest 对象用于在后台和服务器交换数据，可使网页的某部分更新的同时，不重新加载整个页面。 1var request = new XMLHttpRequest(); XMLHttpRequest 对象有许多种方法，其中Send()、Open()方法用于向服务器发送请求。    方法 描述">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://images2018.cnblogs.com/blog/1375391/201804/1375391-20180413141148575-907366970.png">
-<meta property="og:updated_time" content="2018-11-06T12:48:26.841Z">
+<meta property="og:updated_time" content="2018-11-11T08:54:50.393Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript 对象">
-<meta name="twitter:description" content="JavaScritpt 对象小结构造函数，原型对象，实例对象三者之间的关系每创建一个函数都含有一个prototype的属性，该属性是一个指针，指向原型对象。 原型对象上含有一个constructor属性，该属性也是一个指针，指向相关联的构造函数。 通过构造函数产生的实例对象含有一个proto属性，指向原型对象，使其能过访问原型对象上的属性和方法。  总结：每个函数都有一个原型对象，原型对象">
-<meta name="twitter:image" content="https://images2018.cnblogs.com/blog/1375391/201804/1375391-20180413141148575-907366970.png">
+<meta name="twitter:title" content="Ajax_primer">
+<meta name="twitter:description" content="Ajax 初步Ajax = 异步JS和XML，是一种用于创建快速动态网页的技术。 XMLHttpRequest 对象用于在后台和服务器交换数据，可使网页的某部分更新的同时，不重新加载整个页面。 1var request = new XMLHttpRequest(); XMLHttpRequest 对象有许多种方法，其中Send()、Open()方法用于向服务器发送请求。    方法 描述">
 
 
 
@@ -121,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/05/JavaScript-对象小记/">
+  <link rel="canonical" href="http://yoursite.com/2018/11/11/Ajax-primer/">
 
 
 
 
 
-  <title>Javascript 对象 | Bacbin's blogs</title>
+  <title>Ajax_primer | Bacbin's blogs</title>
   
 
 
@@ -244,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/05/JavaScript-对象小记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/11/Ajax-primer/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Bacbin">
@@ -261,7 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Javascript 对象</h1>
+          <h1 class="post-title" itemprop="name headline">Ajax_primer</h1>
         
 
         <div class="post-meta">
@@ -273,8 +271,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-05T21:53:04+08:00">
-                2018-11-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-11T15:32:04+08:00">
+                2018-11-11
               </time>
             
 
@@ -311,18 +309,64 @@
       
 
       
-        <h1 id="JavaScritpt-对象小结"><a href="#JavaScritpt-对象小结" class="headerlink" title="JavaScritpt 对象小结"></a>JavaScritpt 对象小结</h1><h2 id="构造函数，原型对象，实例对象三者之间的关系"><a href="#构造函数，原型对象，实例对象三者之间的关系" class="headerlink" title="构造函数，原型对象，实例对象三者之间的关系"></a>构造函数，原型对象，实例对象三者之间的关系</h2><p>每创建一个函数都含有一个prototype的属性，该属性是一个指针，指向原型对象。</p>
-<p>原型对象上含有一个constructor属性，该属性也是一个指针，指向相关联的构造函数。</p>
-<p>通过构造函数产生的实例对象含有一个<em>proto</em>属性，指向原型对象，使其能过访问原型对象上的属性和方法。</p>
+        <h1 id="Ajax-初步"><a href="#Ajax-初步" class="headerlink" title="Ajax 初步"></a>Ajax 初步</h1><p>Ajax = 异步JS和XML，是一种用于创建快速动态网页的技术。</p>
+<h2 id="XMLHttpRequest-对象"><a href="#XMLHttpRequest-对象" class="headerlink" title="XMLHttpRequest 对象"></a>XMLHttpRequest 对象</h2><p>用于在后台和服务器交换数据，可使网页的某部分更新的同时，不重新加载整个页面。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> request = <span class="keyword">new</span> XMLHttpRequest();</span><br></pre></td></tr></table></figure>
+<p>XMLHttpRequest 对象有许多种方法，其中Send()、Open()方法用于向服务器发送请求。</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open(method, url, async)</td>
+<td>method: 请求类型，“GET”/“POST” <br> url: 文件在服务器上的位置<br> async: 同步(false)或异步(true)</td>
+</tr>
+<tr>
+<td>send(string)</td>
+<td>仅用于POST请求</td>
+</tr>
+</tbody>
+</table>
+<h3 id="‘-GET-‘-Or-‘-POST-‘？"><a href="#‘-GET-‘-Or-‘-POST-‘？" class="headerlink" title="‘ GET ‘ Or ‘ POST ‘？"></a>‘ GET ‘ Or ‘ POST ‘？</h3><p>GET相较于POST更快更简单，但在以下情况中，使用POST：</p>
 <ul>
-<li>总结：每个函数都有一个原型对象，原型对象上都有一个指向函数的指针，实例中也有指向原型对象的指针，而原型对象中有可以找到函数的制针。</li>
+<li><p>无法使用缓存文件（更新服务器上的文件或数据库）</p>
+</li>
+<li><p>向服务器发送大量数据（POST 没有数据量限制）</p>
+</li>
+<li><p>发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠</p>
+</li>
 </ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//People构造函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">People</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//Type属性</span></span><br><span class="line">    <span class="keyword">this</span>.type = <span class="string">'human'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//原型对象上共享的方法showType()</span></span><br><span class="line">People.prototype.showType = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.type);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//people实例对象</span></span><br><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> People();</span><br><span class="line"><span class="comment">//调用原型对象上的共享方法</span></span><br><span class="line">person.showType();<span class="comment">//output: human</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://images2018.cnblogs.com/blog/1375391/201804/1375391-20180413141148575-907366970.png" alt="None"></p>
-<h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p>上面说到，每个函数都有一个prototype属性，指向原型对象，可通过将该函数的prototype属性赋值为其他对象的实例，从而共享了其他对象的方法和属性，实现原型链继承。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">People</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">'The elder'</span>;</span><br><span class="line">&#125;</span><br><span class="line">People.prototype.showType = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="keyword">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Man构造函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Man</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.age = <span class="string">''</span>;</span><br><span class="line">    <span class="keyword">this</span>.saying = <span class="string">'I\'m angry!'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用People的实例对象覆盖Man的原型对象,从而使用People和Man的属性和方法</span></span><br><span class="line">Man.prototype = <span class="keyword">new</span> People();</span><br><span class="line"><span class="comment">//new一个Man的实例对象</span></span><br><span class="line"><span class="keyword">var</span> man = <span class="keyword">new</span> Man();</span><br><span class="line"><span class="comment">//输出</span></span><br><span class="line"><span class="built_in">console</span>.log(man.name+<span class="string">': '</span>+man.saying);<span class="comment">//output: The elder: I'm angry!</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//GET请求</span></span><br><span class="line">request.open(<span class="string">"GET"</span>,<span class="string">"example.txt"</span>, <span class="literal">true</span>);</span><br><span class="line">request.send();</span><br><span class="line"><span class="comment">//POST请求</span></span><br><span class="line">request.open(<span class="string">"POST"</span>,<span class="string">"example.txt"</span>, <span class="literal">true</span>);</span><br><span class="line">request.send();</span><br></pre></td></tr></table></figure>
+<h3 id="onreadystatechange-事件"><a href="#onreadystatechange-事件" class="headerlink" title="onreadystatechange 事件"></a>onreadystatechange 事件</h3><p>onreadystatechange 是一个事件处理函数，它会在服务器给XMLHttpRequest 对象送回响应的时候被触发执行，可能有5个值：</p>
 <ul>
-<li>总结：<del>和链表有一点像</del>，重写Man的prototype属性，从而使Man的实例<em>proto</em>属性也改变，实现原型链。</li>
+<li><p>0表示未初始化</p>
+</li>
+<li><p>1表示正在加载</p>
+</li>
+<li><p>2表示加载完毕</p>
+</li>
+<li><p>3表示正在交互</p>
+</li>
+<li><p>4表示完成</p>
+</li>
+</ul>
+<p>只要readyState的属性变成4，同时status为200（404时，页面不存在），就可以访问服务器发送回来的数据了。一般，会给它制定一个处理函数：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">request.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (request.readyState == <span class="number">4</span> &amp;&amp; request.status == <span class="number">200</span> )&#123;</span><br><span class="line">        <span class="comment">//保存数据</span></span><br><span class="line">        <span class="keyword">var</span> txt = request.responseText</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>访问服务器发送回来的数据时，需要通过两个属性完成：</p>
+<ul>
+<li><p>responseText 用于保存文本字符串形式的数据</p>
+</li>
+<li><p>responseXML 用于保存Content-Type(http中的属性)头部中指定为“text/xml”的数据</p>
+</li>
+</ul>
+<hr>
+<p>Reference :</p>
+<ul>
+<li><a href="https://item.jd.com/10603153.html" target="_blank" rel="noopener">JavaScript DOM 编程艺术</a></li>
 </ul>
 
       
@@ -348,8 +392,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/29/2048/" rel="next" title="2048">
-                <i class="fa fa-chevron-left"></i> 2048
+              <a href="/2018/11/05/Javascript-对象/" rel="next" title="JavaScript 对象小记">
+                <i class="fa fa-chevron-left"></i> JavaScript 对象小记
               </a>
             
           </div>
@@ -357,10 +401,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/05/Javascript-对象/" rel="prev" title="JavaScript 对象小记">
-                JavaScript 对象小记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -476,7 +516,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScritpt-对象小结"><span class="nav-number">1.</span> <span class="nav-text">JavaScritpt 对象小结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#构造函数，原型对象，实例对象三者之间的关系"><span class="nav-number">1.1.</span> <span class="nav-text">构造函数，原型对象，实例对象三者之间的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原型链"><span class="nav-number">1.2.</span> <span class="nav-text">原型链</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ajax-初步"><span class="nav-number">1.</span> <span class="nav-text">Ajax 初步</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#XMLHttpRequest-对象"><span class="nav-number">1.1.</span> <span class="nav-text">XMLHttpRequest 对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#‘-GET-‘-Or-‘-POST-‘？"><span class="nav-number">1.1.1.</span> <span class="nav-text">‘ GET ‘ Or ‘ POST ‘？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#onreadystatechange-事件"><span class="nav-number">1.1.2.</span> <span class="nav-text">onreadystatechange 事件</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
