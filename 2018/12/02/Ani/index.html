@@ -89,7 +89,7 @@
 <meta property="og:image" content="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D801/sign=a9e1f30835a85edffe8cf323785509d8/f9dcd100baa1cd11675be878b812c8fcc2ce2dfc.jpg">
 <meta property="og:image" content="http://jbcdn2.b0.upaiyun.com/2016/12/b197faf5244131de76243828a87346af.gif">
 <meta property="og:image" content="http://jbcdn2.b0.upaiyun.com/2016/12/881b128462806b80f1ec7fb3678fa9f8.jpg">
-<meta property="og:updated_time" content="2018-12-02T15:17:44.270Z">
+<meta property="og:updated_time" content="2018-12-02T15:22:50.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ani">
 <meta name="twitter:description" content="CSS3 Animationanimation: name,duration,timing-function,delay,iterationn,direction,fill-mode Animation-delayanimation-delay: time定义于动画开始之前的时间，默认0s，如定义为负值，则即刻开始，但会从序列中对应的|&amp;lt;\time&amp;gt;|位置开始，即-1s，动画会从">
@@ -379,7 +379,7 @@
 <h3 id="cubic-bezier"><a href="#cubic-bezier" class="headerlink" title="cubic-bezier"></a>cubic-bezier</h3><p><br>贝塞尔曲线，即依据多个位置的点，绘制出的一条光滑的曲线。</p>
 <p><img src="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D801/sign=a9e1f30835a85edffe8cf323785509d8/f9dcd100baa1cd11675be878b812c8fcc2ce2dfc.jpg" alt="none"><br>三次贝塞尔曲线：<br>$B(t)=P_0(1-t)^3+3p_1t(1-t)^2+3P_2t^2(1-t)+P_3t^3,t\in[0,1]$</p>
 <hr>
-<p>二次贝塞尔曲线推导:<br><img src="http://jbcdn2.b0.upaiyun.com/2016/12/b197faf5244131de76243828a87346af.gif" alt="none"><br><img src="http://jbcdn2.b0.upaiyun.com/2016/12/881b128462806b80f1ec7fb3678fa9f8.jpg" alt="none"><br>$由图可知，曲线方程即为P_F轨迹方程，根据定义$<br>$$\frac{AD}{AB}=\frac{BE}{BC}=\frac{DF}{DE}$$<br>$因为点F从D到E，D从A到B，E从B到C$<br>$所以,设P_i(x,y),t\in[0,1],即t_a=0,t_b=1$<br>$$P_B-P_A=v\newline P_D=vt+P_A=P_B+(1-t)P_A$$<br>$同理$<br>$$P_E=P_C+(1-t)P_B\newline P_F=P_E+(1-t)P_D$$<br>$联立上三式，即得$<br>$$P_F=(1-t)^2P_A+2t(1-t)P_B+t^2P_C$$<br>$PS:三次同理，无非多带几个P_D=P_B+(1-t)P_A方程$</p>
+<p>二次贝塞尔曲线推导:<br><img src="http://jbcdn2.b0.upaiyun.com/2016/12/b197faf5244131de76243828a87346af.gif" alt="none"><br><img src="http://jbcdn2.b0.upaiyun.com/2016/12/881b128462806b80f1ec7fb3678fa9f8.jpg" alt="none"><br>$由图可知，曲线方程即为P_F轨迹方程，根据定义$<br>$$\frac{AD}{AB}=\frac{BE}{BC}=\frac{DF}{DE}$$<br>$因为点F从D到E，D从A到B，E从B到C$<br>$所以,设P_i(x,y),t\in[0,1],即t_a=0,t_b=1$<br>$$P_B-P_A=v$$<br>$$P_D=vt+P_A=P_B+(1-t)P_A$$<br>$同理$<br>$$P_E=P_C+(1-t)P_B$$<br>$$P_F=P_E+(1-t)P_D$$<br>$联立上三式，即得$<br>$$P_F=(1-t)^2P_A+2t(1-t)P_B+t^2P_C$$<br>$PS:三次同理，无非多带几个P_D=P_B+(1-t)P_A方程$</p>
 <hr>
 <p>timing_function中的贝塞尔曲线为三次，因此，需要四个控制点，但默认P_0为（0，0），而P_3为（1，1），<code>cubic-bezier(x1,y1,x2,y2)</code></p>
 <h2 id="Animation-name-amp-amp-keyframes"><a href="#Animation-name-amp-amp-keyframes" class="headerlink" title="Animation-name &amp;&amp; @keyframes"></a>Animation-name &amp;&amp; @keyframes</h2><p>name置顶一系列的动画，而名称由@keyframes（关键帧）定义。</p>
