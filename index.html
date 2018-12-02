@@ -249,6 +249,186 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/02/Ani/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bacbin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Bacbin's blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/02/Ani/" itemprop="url">Ani</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-02T20:16:46+08:00">
+                2018-12-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web/" itemprop="url" rel="index">
+                    <span itemprop="name">Web</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="CSS3-Animation"><a href="#CSS3-Animation" class="headerlink" title="CSS3 Animation"></a>CSS3 Animation</h1><p><code>animation: name,duration,timing-function,delay,iterationn,direction,fill-mode</code></p>
+<h2 id="Animation-delay"><a href="#Animation-delay" class="headerlink" title="Animation-delay"></a>Animation-delay</h2><p><code>animation-delay: time</code><br>定义于动画开始之前的时间，默认0s，如定义为负值，则即刻开始，但会从序列中对应的|&lt;\time&gt;|位置开始，即-1s，动画会从1s时的位置开始。</p>
+<h2 id="Animation-direction"><a href="#Animation-direction" class="headerlink" title="Animation-direction"></a>Animation-direction</h2><p><code>animation-direction: normal||alternate||reverse||alternate-reverse</code><br>简单的理解为动画运行的方向，有4个value：</p>
+<ul>
+<li><p>normal,即正向运动（默认）</p>
+</li>
+<li><p>alternate，交替运动，即正反正反。。。</p>
+</li>
+<li><p>reverse，反向运动</p>
+</li>
+<li><p>alternate-reverse，先反向，再正向</p>
+</li>
+</ul>
+<h2 id="Animation-duration"><a href="#Animation-duration" class="headerlink" title="Animation-duration"></a>Animation-duration</h2><p><code>animation-duration: time</code><br>动画周期，负值、无单位均无效。</p>
+<h2 id="Animation-iteration-count"><a href="#Animation-iteration-count" class="headerlink" title="Animation-iteration-count"></a>Animation-iteration-count</h2><p><code>animation-iteraion-count: Num||infinite</code><br>动画被播放的次数，默认1，</p>
+<h2 id="Animation-play-state"><a href="#Animation-play-state" class="headerlink" title="Animation-play-state"></a>Animation-play-state</h2><p><code>animation-play-state: running||paused</code><br>定义动画是否运行或者暂停。</p>
+<h2 id="Animation-timing-function"><a href="#Animation-timing-function" class="headerlink" title="Animation-timing-function"></a>Animation-timing-function</h2><p><code>animation-timing-function: value</code><br>定义在每一个动画周期上的节奏，有6个属性值：</p>
+<ul>
+<li><p>linear，匀速</p>
+</li>
+<li><p>ease，由低速到高速公路</p>
+</li>
+<li><p>ease-in，低速开始</p>
+</li>
+<li><p>ease-out，低速结束</p>
+</li>
+<li><p>ease-in-out，低速开始结束</p>
+</li>
+<li><p>cubic-bezier，三茨贝塞尔曲线</p>
+</li>
+</ul>
+<h3 id="cubic-bezier"><a href="#cubic-bezier" class="headerlink" title="cubic-bezier"></a>cubic-bezier</h3><p><br>贝塞尔曲线，即依据多个位置的点，绘制出的一条光滑的曲线。</p>
+<p><img src="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D801/sign=a9e1f30835a85edffe8cf323785509d8/f9dcd100baa1cd11675be878b812c8fcc2ce2dfc.jpg" alt="none"><br>三次贝塞尔曲线：<br>$B(t)=P_0(1-t)^3+3p_1t(1-t)^2+3P_2t^2(1-t)+P_3t^3,t\in[0,1]$</p>
+<hr>
+<p>二次贝塞尔曲线推导:<br><img src="http://jbcdn2.b0.upaiyun.com/2016/12/b197faf5244131de76243828a87346af.gif" alt="none"><br><img src="http://jbcdn2.b0.upaiyun.com/2016/12/881b128462806b80f1ec7fb3678fa9f8.jpg" alt="none"><br>$由图可知，曲线方程即为P_F轨迹方程，根据定义$<br>$$\frac{AD}{AB}=\frac{BE}{BC}=\frac{DF}{DE}$$<br>$因为点F从D到E，D从A到B，E从B到C$<br>$所以,设P_i(x,y),t\in[0,1],即t_a=0,t_b=1$<br>$$P_B-P_A=v\newline P_D=vt+P_A=P_B+(1-t)P_A$$<br>$同理$<br>$$P_E=P_C+(1-t)P_B\newline P_F=P_E+(1-t)P_D$$<br>$联立上三式，即得$<br>$$P_F=(1-t)^2P_A+2t(1-t)P_B+t^2P_C$$<br>$PS:三次同理，无非多带几个P_D=P_B+(1-t)P_A方程$</p>
+<hr>
+<p>timing_function中的贝塞尔曲线为三次，因此，需要四个控制点，但默认P_0为（0，0），而P_3为（1，1），<code>cubic-bezier(x1,y1,x2,y2)</code></p>
+<h2 id="Animation-name-amp-amp-keyframes"><a href="#Animation-name-amp-amp-keyframes" class="headerlink" title="Animation-name &amp;&amp; @keyframes"></a>Animation-name &amp;&amp; @keyframes</h2><p>name置顶一系列的动画，而名称由@keyframes（关键帧）定义。</p>
+<h3 id="keyframes"><a href="#keyframes" class="headerlink" title="@keyframes"></a>@keyframes</h3><p>通过Persentage,from-to，控制动画中的中间步骤。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> IDENT &#123;</span><br><span class="line">    0% &#123;<span class="attribute">Properties</span>: Properties value;&#125;</span><br><span class="line">    <span class="selector-tag">Persentage</span> &#123;<span class="attribute">Properties</span>: Properties value;&#125;</span><br><span class="line">    100% &#123;<span class="attribute">Properties</span>: Properties value;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/18/DOM/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1588,7 +1768,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
