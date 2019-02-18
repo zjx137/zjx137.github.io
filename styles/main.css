@@ -540,6 +540,14 @@ pre .javascript .function {
   height: 10px;
   margin: 4px 25px 4px 2px;
 }
+@media screen and (max-width: 960px) {
+  #avator {
+    display: none;
+  }
+  ._toc {
+    display: none;
+  }
+}
 .tags h3 {
   color: #808080;
   border-bottom: 1px solid #eee;
