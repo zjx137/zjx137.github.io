@@ -54,6 +54,10 @@ body {
   bottom: 0px;
   right: -2px;
 }
+.mjx-chtml {
+  line-height: 1px;
+  white-space: normal;
+}
 header {
   display: block;
   box-shadow: 0 0 1px rgba(0,0,0,0.15);
