@@ -41,10 +41,11 @@ code {
   font-size: 14px;
   font-weight: bold;
   color: #808080,;
-  background: #f8f5ec;
+  background: #34495e;
   z-index: 20;
   overflow-x: hidden;
   box-sizing: border-box;
+  color: #fff;
 }
 .highlight figcaption > a {
   position: absolute;

@@ -34,7 +34,6 @@ $(window).resize(function(){
     var $postswrapper = $('.posts-wrapper');
     if($(window).width()<1480){
         $toc.css("display","none");
-        $(".logo").text('Hexo');
     }
     else {
         $toc.css("display","block");
@@ -50,9 +49,15 @@ $(window).resize(function(){
     }
 });
 $(function(){
-    var $logo = $('.logo');
+    var $toc = $('._toc');
+    var minwidth = 1480;
+    var $avator = $('#avator');
+    var $postswrapper = $('.posts-wrapper');
     if($(window).width<1480){
-        $(".logo").text('Hexo');
+        $toc.css("display","none");
     }
-
+    if($(window).width()<950){
+        $avator.css("display","none");
+        $postswrapper.css("width","100%");
+    }
 });
