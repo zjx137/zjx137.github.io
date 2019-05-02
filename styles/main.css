@@ -66,6 +66,10 @@ h3::before {
   content: "# ";
 color
 }
+input[type="checkbox"] {
+  width: 20px;
+  height: 15px;
+}
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 header {
   display: block;
