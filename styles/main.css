@@ -71,6 +71,10 @@ input[type="checkbox"] {
   height: 15px;
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@font-face {
+  font-family: "myFirstFont";
+  src: url("/fonts/Montserrat-Light.otf");
+}
 header {
   display: block;
   box-shadow: 0 0 3px rgba(0,0,0,0.15);
@@ -83,13 +87,15 @@ header .title {
   float: left;
   position: relative;
   font-size: 26px;
-  font-family: 'Montserrat';
+  font-family: "myFirstFont";
 }
 header .site-nav {
   float: right;
+  margin-right: -12px;
 }
 header .site-nav .menu {
   display: block;
+  font-family: "myFirstFont";
   position: relative;
   padding-left: 0;
   padding-right: 0px;
