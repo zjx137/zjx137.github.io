@@ -7,13 +7,16 @@
   margin: 0 auto;
   max-width: 1040px;
   width: 90%;
-  background: #fcfcfc;
   padding: 0 40px;
-  box-shadow: 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
 }
 a {
   text-decoration: none;
   color: #5d88ab;
+  white-space: pre-wrap;
+}
+p {
+  white-space: pre-wrap;
 }
 *::selection {
   color: #fff;
@@ -77,9 +80,8 @@ input[type="checkbox"] {
 }
 header {
   display: block;
-  box-shadow: 0 0 3px rgba(0,0,0,0.15);
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
   height: 65px;
-  background: #fafafa;
   line-height: 65px;
   font-family: 'Montserrat Light';
 }
@@ -97,6 +99,7 @@ header .site-nav .menu {
   display: block;
   font-family: "myFirstFont";
   position: relative;
+  font-family: "myFirstFont";
   padding-left: 0;
   padding-right: 0px;
 }
@@ -112,6 +115,11 @@ header:after {
 }
 header:after {
   clear: both;
+}
+@media only screen and (max-width: 520px) {
+  .title {
+    display: none;
+  }
 }
 .posts-wrapper {
   margin-top: 20px;
@@ -295,7 +303,6 @@ pre .javascript .function {
 .archive {
   margin: 1em auto;
   padding: 30px 50px;
-  background-color: #fff;
   border-bottom: 1px solid #eee;
 }
 .archive .post-archive {
@@ -446,6 +453,7 @@ pre .javascript .function {
 }
 .copyright .text {
   text-align: center;
+  font-size: 14px;
 }
 .post-content {
   vertical-align: middle;
@@ -528,6 +536,11 @@ pre .javascript .function {
 }
 ._toc .toc-content li {
   list-style: disc;
+}
+.active {
+  background: #e5e9ef;
+  border-radius: 1px;
+  box-shadow: 1px 1px 1px #ddd;
 }
 .side-bar {
   float: left;

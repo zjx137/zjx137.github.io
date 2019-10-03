@@ -5,9 +5,8 @@
 }
 header {
   display: block;
-  box-shadow: 0 0 3px rgba(0,0,0,0.15);
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
   height: 65px;
-  background: #fafafa;
   line-height: 65px;
   font-family: 'Montserrat Light';
 }
@@ -25,6 +24,7 @@ header .site-nav .menu {
   display: block;
   font-family: "myFirstFont";
   position: relative;
+  font-family: "myFirstFont";
   padding-left: 0;
   padding-right: 0px;
 }
@@ -40,4 +40,9 @@ header:after {
 }
 header:after {
   clear: both;
+}
+@media only screen and (max-width: 520px) {
+  .title {
+    display: none;
+  }
 }
