@@ -4,11 +4,12 @@
   padding: 0;
 }
 .main {
-  margin: 0 auto;
+  margin: 5px auto;
   max-width: 1040px;
   width: 90%;
   padding: 0 40px;
-  box-shadow: 0 0 1px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 a {
   text-decoration: none;
@@ -38,7 +39,7 @@ body {
 .text-underline::after {
   position: absolute;
   left: 0;
-  top: 100%;
+  top: 92%;
   content: "";
   background-color: #5f84a9;
   width: 97%;
@@ -63,11 +64,6 @@ body {
   line-height: 1px;
   white-space: normal;
 }
-h2::before,
-h3::before {
-  content: "# ";
-color
-}
 input[type="checkbox"] {
   width: 20px;
   height: 15px;
@@ -81,6 +77,7 @@ header {
   display: block;
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
   height: 65px;
+  margin-top: -5px;
   line-height: 65px;
   font-family: 'Montserrat Light';
 }
@@ -240,7 +237,7 @@ code {
 .highlight td {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100.1%;
   border-collapse: collapse;
 }
 pre .comment,
@@ -340,6 +337,10 @@ pre .javascript .function {
   transition: 0.2s ease-out;
   transform: translateX(5px);
   border-left: 2px solid #5d88ab;
+}
+.page-nav,
+.paginator {
+  padding-bottom: 10px;
 }
 .page-nav .next,
 .paginator .next {
@@ -446,7 +447,6 @@ pre .javascript .function {
 .copyright {
   color: #8a8a8a;
   text-align: center;
-  font-family: 'Montserrat';
   margin: 40px auto 20px;
   max-width: 980px;
 }
@@ -530,15 +530,19 @@ pre .javascript .function {
   content: "\f02c";
   margin-right: 0.5em;
 }
-._toc .toc-content {
-  margin-left: 22px;
-}
 ._toc .toc-content li {
-  list-style: disc;
+  list-style: none;
+  white-space: nowrap;
 }
 .active {
   background: #e5e9ef;
-  border-radius: 1px;
+  display: block;
+  width: 180px;
+  margin-left: -10px;
+  padding-left: 10px;
+  height: 25px;
+  line-height: 25px;
+  border-left: 3px solid #34495e;
   box-shadow: 1px 1px 1px #ddd;
 }
 .side-bar {
@@ -584,6 +588,9 @@ pre .javascript .function {
   }
   .posts-wrapper {
     width: 100%;
+  }
+  ._toc {
+    display: none;
   }
   ._toc {
     display: none;

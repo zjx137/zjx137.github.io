@@ -14,7 +14,7 @@ $(function(){
         //当点击跳转链接后，回到页面顶部位置
         $("#back-to-top").click(function(){
             //$('body,html').animate({scrollTop:0},1000);
-    if ($('html').scrollTop()) {
+            if ($('html').scrollTop()) {
             $('html').animate({ scrollTop: 0 }, 1000);
             return false;
         }

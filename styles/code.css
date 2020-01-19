@@ -16,6 +16,7 @@ code {
 }
 .highlight table {
   position: relative;
+  width: 100.1%;
 }
 .highlight table::after {
   position: absolute;
